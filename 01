@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class c1 {
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			  Scanner sc = new Scanner(System.in);
+		       
+		        System.out.println("密碼輸入測試");	
+		        System.out.print("請輸入密碼:");
+		        int x = sc.nextInt();		    	
+		 		
+		 		for(int i = 0; i<=2; i++) {
+		    	System.out.print("請再輸入一次密碼:");
+		    	int y = sc.nextInt();
+		    	if(x==y) {
+		    	System.out.print("密碼正確");
+		    	break;
+		        }
+		    	else if(x!=y) 
+		        System.out.println("與第一次輸入不同");	
+		 		
+		    	if(i==2) 
+		    	throw  new  RuntimeException("輸入三次錯誤！程式停止！");
+		 		}
+	}
+}
